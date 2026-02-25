@@ -57,6 +57,8 @@ Contributions are welcome! This toolkit grows more useful with broader coverage 
 
 There are several fantastic resources you can review for file upload testing. Some of my favorites are listed below:
 - https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Upload%20Insecure%20Files/README.md
+- https://book.hacktricks.wiki/en/pentesting-web/file-upload/index.html
+- https://github.com/xl7dev/WebShell/tree/master
 - https://portswigger.net/web-security/file-upload
 - https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Upload
 - https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html
