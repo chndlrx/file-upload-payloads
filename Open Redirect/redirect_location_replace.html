@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Open Redirect Test - location.replace()</title>
+</head>
+<body>
+  <p>Redirecting via location.replace()...</p>
+  <p><strong>Test vector:</strong> location.replace()</p>
+  <script>
+    // OPEN REDIRECT TEST: location.replace()
+    var params = new URLSearchParams(window.location.search);
+    var target = params.get('redirect') || 'https://example.com';
+    location.replace(target);
+  </script>
+</body>
+</html>

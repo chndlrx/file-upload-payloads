@@ -1,0 +1,76 @@
+%PDF-1.3
+%“Œ‹ž ReportLab Generated PDF document (opensource)
+1 0 obj
+<<
+/F1 2 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://example.com)
+>> /Border [ 0 0 1 ] /Rect [ 72 632 400 647 ] /Subtype /Link /Type /Annot
+>>
+endobj
+4 0 obj
+<<
+/Annots [ 3 0 R ] /Contents 8 0 R /MediaBox [ 0 0 612 792 ] /Parent 7 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+5 0 obj
+<<
+/PageMode /UseNone /Pages 7 0 R /Type /Catalog
+>>
+endobj
+6 0 obj
+<<
+/Author (anonymous) /CreationDate (D:20260224211418+00'00') /Creator (anonymous) /Keywords () /ModDate (D:20260224211418+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (Test Vector: PDF URI action annotation) /Title (Open Redirect Test - URI Action) /Trapped /False
+>>
+endobj
+7 0 obj
+<<
+/Count 1 /Kids [ 4 0 R ] /Type /Pages
+>>
+endobj
+8 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 249
+>>
+stream
+Garo:6#4@l%#+0K(%8XJQGcos=DhF/?r.[Soi-+U*3F5@fHF,FIf9u/_dG&/6:cEpSjG2d$<;;c$R't!:atT9.Z6(/%U3+1F*0VtdO>i+LPPVq*VNa-J[L#Q'KkBZJ&>HJnIB?t]Mrsa"J%iZs/>iU%4J62'2+0OU`[c>k+A[>/P"N=pU,8^Zl<e&CYT6E0W]7G52#dNN/bU))LciiY9a%5%.9kebblX=Nrb,m#JOp;isu0K?Q\N8f)~>endstream
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000061 00000 n 
+0000000092 00000 n 
+0000000199 00000 n 
+0000000349 00000 n 
+0000000560 00000 n 
+0000000628 00000 n 
+0000000939 00000 n 
+0000000998 00000 n 
+trailer
+<<
+/ID 
+[<2319dfdfec6cce7e5019c214eaedd1cf><2319dfdfec6cce7e5019c214eaedd1cf>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 6 0 R
+/Root 5 0 R
+/Size 9
+>>
+startxref
+1337
+%%EOF

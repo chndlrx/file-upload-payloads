@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <title>Open Redirect Test - Electron App</title>
+</head>
+<body>
+  <p><strong>Test vector:</strong> Electron shell.openExternal() redirect</p>
+  <button id="redirect-btn">Open External URL</button>
+  <pre id="log"></pre>
+
+  <script>
+    // OPEN REDIRECT TEST: Electron shell.openExternal with user-controlled URL
+    // In Electron renderer process context
+
+    const params = new URLSearchParams(window.location.search);
+    const target = params.get('url') || 'https://example.com';
+
+    document.getElementById('redirect-btn').addEventListener('click', () => {
+      // OPEN REDIRECT TEST VECTOR 1: shell.openExternal (opens in OS default browser)
+      // Vulnerable if `target` is attacker-controlled
+      if (window.electronAPI && window.electronAPI.openExternal) {
+        window.electronAPI.openExternal(target);
+      }
+
+      // OPEN REDIRECT TEST VECTOR 2: Direct navigation in Electron renderer
+      // (bypasses nodeIntegration but still a redirect)
+      window.location.href = target;
+    });
+
+    document.getElementById('log').textContent = `Target URL: ${target}`;
+  </script>
+</body>
+</html>

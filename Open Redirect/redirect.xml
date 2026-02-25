@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="redirect.xsl"?>
+<!-- OPEN REDIRECT TEST: XML with XSL stylesheet redirect -->
+<redirect>
+  <meta>
+    <title>Open Redirect Test - XML</title>
+    <description>XML file using XSL transform to perform redirect</description>
+    <vectors>
+      <vector name="xml-stylesheet PI">xml-stylesheet processing instruction pointing to XSL that contains redirect</vector>
+      <vector name="xsl:value-of">XSL transform outputting meta-refresh HTML</vector>
+    </vectors>
+  </meta>
+  <target>https://example.com</target>
+</redirect>

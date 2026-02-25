@@ -1,0 +1,68 @@
+%PDF-1.6
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792]
+   /Contents 5 0 R
+   /Annots [6 0 R]
+   /Resources << /Font << /F1 4 0 R >> >> >>
+endobj
+
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+
+5 0 obj
+<< /Length 256 >>
+stream
+BT
+/F1 14 Tf
+72 720 Td
+(Open Redirect Test - Launch Action) Tj
+0 -24 Td
+/F1 11 Tf
+(Vector: PDF /Launch action with /URI dictionary.) Tj
+0 -20 Td
+(Target: https://example.com) Tj
+0 -20 Td
+(Click the annotation rectangle to trigger the Launch action.) Tj
+ET
+
+endstream
+endobj
+
+6 0 obj
+<< /Type /Annot /Subtype /Link
+   /Rect [72 640 400 660]
+   /Border [0 0 1]
+   /A << /Type /Action /S /URI /URI 7 0 R >> >>
+endobj
+
+7 0 obj
+<< /Length 19 >>
+stream
+https://example.com
+endstream
+endobj
+
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000059 00000 n 
+0000000117 00000 n 
+0000000269 00000 n 
+0000000340 00000 n 
+0000000648 00000 n 
+0000000788 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+858
+%%EOF

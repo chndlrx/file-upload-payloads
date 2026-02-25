@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Open Redirect Test - Form Action</title>
+</head>
+<body>
+  <p><strong>Test vector:</strong> HTML form action with user-controlled redirect parameter</p>
+  <!-- OPEN REDIRECT TEST: form action pointing to external URL -->
+  <form method="GET" action="https://example.com">
+    <input type="hidden" name="next" value="https://example.com">
+    <button type="submit">Submit Form (redirects via action)</button>
+  </form>
+
+  <!-- Secondary test: form action built from query param -->
+  <script>
+    var params = new URLSearchParams(window.location.search);
+    var target = params.get('action');
+    if (target) {
+      document.querySelector('form').action = target;
+    }
+  </script>
+</body>
+</html>

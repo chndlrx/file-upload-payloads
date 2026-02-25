@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Open Redirect Test - Anchor href Injection</title>
+</head>
+<body>
+  <p><strong>Test vector:</strong> anchor href set from URL parameter</p>
+  <a id="redirect-link" href="https://example.com">Click to redirect</a>
+
+  <script>
+    // OPEN REDIRECT TEST: anchor href injection from URL param
+    var params = new URLSearchParams(window.location.search);
+    var target = params.get('url') || 'https://example.com';
+    document.getElementById('redirect-link').href = target;
+    // Auto-click for automated testing:
+    // document.getElementById('redirect-link').click();
+  </script>
+</body>
+</html>

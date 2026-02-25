@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Open Redirect Test - WebAssembly Interface</title>
+</head>
+<body>
+  <p><strong>Test vector:</strong> WebAssembly calling JS redirect via imported function</p>
+  <pre id="status">Loading...</pre>
+
+  <script>
+    /**
+     * This demonstrates an open redirect where the redirect URL originates
+     * from WebAssembly memory or exports, and is executed via a JS import.
+     * The WASM module "exports" a target URL to host JS which then redirects.
+     */
+
+    // Simulated WASM module result (in real scenario, URL comes from wasm memory)
+    const wasmSimulatedTarget = new URLSearchParams(window.location.search).get('url')
+      || 'https://example.com';
+
+    // OPEN REDIRECT TEST VECTOR: JS "import" called by WASM logic
+    function performRedirect(urlPtr) {
+      // In real WASM scenario: read string from memory at urlPtr
+      const target = wasmSimulatedTarget;
+      document.getElementById('status').textContent = `Redirecting to: ${target}`;
+      window.location.href = target;
+    }
+
+    // Simulate WASM calling our imported redirect function
+    const wasmImports = {
+      env: {
+        redirect: performRedirect,
+        log: console.log
+      }
+    };
+
+    document.getElementById('status').textContent =
+      `WASM redirect test — target: ${wasmSimulatedTarget}`;
+
+    // Uncomment to auto-redirect:
+    // performRedirect(0);
+  </script>
+</body>
+</html>

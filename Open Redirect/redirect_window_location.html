@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Open Redirect Test - window.location</title>
+</head>
+<body>
+  <p>Redirecting via window.location...</p>
+  <p><strong>Test vector:</strong> window.location</p>
+  <script>
+    // OPEN REDIRECT TEST: window.location assignment
+    var target = new URLSearchParams(window.location.search).get('url') || 'https://example.com';
+    window.location = target;
+  </script>
+</body>
+</html>

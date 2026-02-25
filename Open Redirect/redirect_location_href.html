@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Open Redirect Test - location.href</title>
+</head>
+<body>
+  <p>Redirecting via location.href...</p>
+  <p><strong>Test vector:</strong> location.href</p>
+  <script>
+    // OPEN REDIRECT TEST: location.href
+    var params = new URLSearchParams(window.location.search);
+    var target = params.get('redirect') || params.get('url') || params.get('next') || 'https://example.com';
+    location.href = target;
+  </script>
+</body>
+</html>

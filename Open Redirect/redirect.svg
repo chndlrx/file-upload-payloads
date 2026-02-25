@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- OPEN REDIRECT TEST: SVG with embedded JavaScript redirect -->
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="400" height="200"
+     onload="redirect()">
+
+  <title>Open Redirect Test - SVG</title>
+  <desc>SVG file with redirect test vectors</desc>
+
+  <rect width="400" height="200" fill="#f0f0f0" rx="10"/>
+  <text x="200" y="80" text-anchor="middle" font-size="16" font-family="sans-serif" fill="#333">
+    Open Redirect Test (SVG)
+  </text>
+  <text x="200" y="110" text-anchor="middle" font-size="11" font-family="monospace" fill="#666">
+    Redirecting via SVG onload + window.location
+  </text>
+
+  <!-- TEST VECTOR 1: SVG onload script -->
+  <script type="text/javascript">
+    <![CDATA[
+      function redirect() {
+        // OPEN REDIRECT TEST: onload handler in SVG
+        var target = 'https://example.com';
+        window.location.href = target;
+      }
+    ]]>
+  </script>
+
+  <!-- TEST VECTOR 2: SVG anchor element (xlink:href) -->
+  <a xlink:href="https://example.com">
+    <rect x="150" y="140" width="100" height="30" fill="#4a90e2" rx="5"/>
+    <text x="200" y="160" text-anchor="middle" font-size="12" fill="white">Click Link</text>
+  </a>
+
+</svg>
