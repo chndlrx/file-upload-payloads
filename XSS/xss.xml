@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<root>
+  <script xmlns="http://www.w3.org/1999/xhtml">alert(1)</script>
+</root>

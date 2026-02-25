@@ -1,0 +1,2 @@
+body { background: url("javascript:alert(1)"); }
+@import "javascript:alert(1)";

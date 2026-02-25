@@ -1,0 +1,6 @@
+<html><body>
+<script>
+  window.addEventListener('message', e => eval(e.data));
+  window.postMessage('alert(1)', '*');
+</script>
+</body></html>

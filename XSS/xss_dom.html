@@ -1,0 +1,7 @@
+<html><body>
+<div id="out"></div>
+<script>
+  // Simulates DOM XSS via location.hash
+  document.getElementById('out').innerHTML = decodeURIComponent('<img src=x onerror=alert(1)>');
+</script>
+</body></html>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <title><![CDATA[</title><script>alert(1)</script>]]></title>
+    <description>XSS in RSS</description>
+  </channel>
+</rss>

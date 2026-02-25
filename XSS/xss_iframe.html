@@ -1,0 +1,1 @@
+<iframe srcdoc="<script>alert(1)</script>"></iframe>
