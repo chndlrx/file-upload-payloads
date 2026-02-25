@@ -8,7 +8,9 @@ Functional web shells across six server-side languages and one WordPress-specifi
 
 | File | Language | Trigger | Command param | Auth |
 |---|---|---|---|---|
+| `PHP/0.php` | PHP | GET | `0` | None |
 | `PHP/0_echo.php` | PHP | GET | `0` | None |
+| `PHP/cmd.php` | PHP | GET | `cmd` | None |
 | `PHP/script.php` | PHP | GET | hardcoded | None |
 | `ASP/webshell.asp` | Classic ASP | GET | `cmd` | None |
 | `ASP/webshell2.asp` | ASP.NET (C#) | GET | `cmd` | None |
