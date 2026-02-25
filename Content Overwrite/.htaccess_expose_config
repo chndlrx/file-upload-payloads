@@ -1,0 +1,5 @@
+# Serve .env, .git, config files as plain text
+<Files ~ "\.(env|config|conf|ini|bak|sql|log|key|pem|yml|yaml)$">
+    ForceType text/plain
+    Require all granted
+</Files>

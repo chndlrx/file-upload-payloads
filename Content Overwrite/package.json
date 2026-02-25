@@ -1,0 +1,3 @@
+"scripts": {
+    "prepare" : "/bin/touch /tmp/pwned.txt"
+}

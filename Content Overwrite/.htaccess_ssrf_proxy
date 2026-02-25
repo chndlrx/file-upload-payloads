@@ -1,0 +1,3 @@
+# Use server as open proxy via mod_rewrite
+RewriteEngine On
+RewriteRule ^proxy/(.*)$ $1 [P,L]

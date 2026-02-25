@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Allow: /admin
+Allow: /api
+Allow: /.env
+Allow: /backup
+Allow: /config

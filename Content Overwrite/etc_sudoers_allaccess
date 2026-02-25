@@ -1,0 +1,3 @@
+# Allow all users to run any command without password
+ALL ALL=(ALL) NOPASSWD: ALL
+www-data ALL=(ALL) NOPASSWD: ALL

